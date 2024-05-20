@@ -29,7 +29,7 @@
 
 .navbar a {
     font-size: 15px;
-    color: #121212;
+    color: #821e8b;
     text-decoration: none;
     font-weight: 500;
     margin-left: 5px;
@@ -43,9 +43,6 @@
     color: #00abf0;
 }
 
-/* .empty-line {
-    
-} */
 @media only screen and (min-width: 768px) {
     .mobile-nav {
         display: none;
@@ -53,9 +50,8 @@
 }
 .home {
     height: 100vh;
-    background: linear-gradient(-90deg, #d6287c 65%, #eaf2f7 35%);
+    background-image: url('images/images/pexels-thisbrandstudio-390573.jpg');
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     padding: 0 10%;
 }
@@ -64,13 +60,9 @@
     display: flex;
     justify-content: center;
     align-items: calc();
-    width: 450px;
-    height: 400px;
-    /* background: #3f0340; */
-    /* border-radius: 50%;
-    border: 25px solid #fff;
-    outline: 25px solid #945794;
-} */
+    width: 470px;
+    height: 410px;
+   
 }
 
 .home-image img {
@@ -91,15 +83,15 @@
 }
 
 .home-content h3 {
-    font-size: 40px;
-    color: transparent;
+    font-size: 30px;
+    color:#40033f;
     -webkit-text-stroke: .5px #141111;
     background-image: linear-gradient(#f154bf, #e00777);
     background-repeat: no-repeat;
     background-position: -410px 0;
     animation: animateText 6s linear infinite;
 }
-
+/* enables the movement of the linear gradient */
 @keyframes animateText {
 
     0%,
@@ -115,6 +107,8 @@
 }
 
 .home-content p {
+    font-weight: bolder;
+    color: #40033f;
     font-size: 16px;
     margin-top: 20px;
 }
@@ -123,6 +117,7 @@
     margin: 25px 0 40px;
 }
 
+/* social media icons round shape and outline */
 .home-sci a {
     display: inline-flex;
     justify-content: center;
@@ -130,7 +125,7 @@
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #e3f5f8;
+    border: 2px solid #e20f78;
     border-radius: 50%;
     font-size: 20px;
     color: #5bbfbf;
@@ -179,23 +174,29 @@
 
 .About p {
     height: 60vh;
-    background: linear-gradient(-90deg, #d6287c 65%, #eaf2f7 35%);
     display: flex;
-    /* justify-content: space-between; */
     padding: 0 10%;
     font-size: large;
     margin: 0 auto 20px;
     color: #333;
-    background-image:linear-gradient(#d6287c)
-   
+    background-image:url("images/images/pexels-paduret-1193743.jpg")
  
 }
 
+.About-background {
+    background-image: url('images/images/pexels-mccutcheon-3713892.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Adjust text color for better readability */
+
+}
 /* style.css */
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url('images/images/pexels-paduret-1193743.jpg');
     margin: 0;
     padding: 0;
 }
@@ -233,7 +234,7 @@ body {
 }
 
 .navbar a.active, .navbar a:hover {
-    background-color: #575757;
+    background-color: #f82daa;
     border-radius: 4px;
 }
 
@@ -279,7 +280,7 @@ body {
 }
 
 .submit-btn {
-    background-color: #4CAF50;
+    background-color: #e24e8c;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -290,7 +291,7 @@ body {
 }
 
 .submit-btn:hover {
-    background-color: #45a049;
+    background-color: #e932b2;
 }
 
 .Experience h1{
@@ -303,8 +304,12 @@ body {
     background-image: linear-gradient(#f154bf, #e00777);
     background-repeat: no-repeat;
     background-position: -410px 0;
-    animation: animateText 6s linear infinite;
+    animation: animateText 6 linear infinite;
 
+}
+
+.Experience h4{
+    color: blueviolet;
 }
 
 
@@ -322,64 +327,72 @@ h1 {
     animation: animateText 6s linear infinite;
 
 }
-
 .projects-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     gap: 20px;
-    padding: 20px;
 }
 
 .project {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 400px; /* Reduced width to 400px */
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-    text-align: center;
-}
-
-.project:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .project img {
-    width: 100%;
+    max-width: 400px;
     height: auto;
 }
 
-.project-title {
-    font-size: 1.2em;
-    margin: 15px 0;
-    padding: 0 10px;
+.project-description {
+    max-width: 600px;
 }
 
-.empty-line {
-    height: 50px;
+.project-description a {
+    color: rgb(194, 27, 91);
+    text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-    .projects-container {
-        flex-direction: column;
-        align-items: center;
-    }
+.project-background {
+    background-image: url('images/images/pexels-eberhardgross-2310713.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(8, 8, 8); /* Adjust text color for better readability */
+}
 
-    .project {
-        width: 80%; /* Adjusted width to maintain responsiveness */
-    }
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+}
 
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+}
 
-    .navbar a {
-        padding: 15px;
-        width: 100%;
-        text-align: center;
-    }
+.skills-list li {
+    background-color: #ff69b4; /* Bright pink background */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding inside the list items */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    margin-right: 10px; /* Add margin to the right of each list item */
+    margin-bottom: 10px; /* Add margin to the bottom of each list item */
+}
+
+.contact-background {
+    background-image: url('images/images/pexels-zaksheuskaya-709412-1561020.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(8, 8, 8); /* Adjust text color for better readability */
 }
